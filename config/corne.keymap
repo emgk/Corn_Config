@@ -46,10 +46,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL   &kp QUESTION   &kp AMPS          &kp PIPE   &kp DOLLAR    &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK       &kp PLUS       &kp BSPC
-&kp LCTRL  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp MINUS     &js_arrow  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON  &kp GRAVE
-&kp LSHFT  &kp TILDE  &kp SLASH      &kp AT            &kp HASH   &kp PRCNT     &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp SQT        &kp TILDE
-                                     &kp LGUI          &trans     &kp SPACE     &kp RET    &trans                &kp RALT
+&kp TAB    &kp EXCL   &kp QUESTION          &kp AMPS          &kp PIPE   &kp DOLLAR    &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK       &kp PLUS       &kp BSPC
+&kp LCTRL  &kp GRAVE  &kp LESS_THAN         &kp GREATER_THAN  &kp EQUAL  &kp MINUS     &js_arrow  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON  &kp GRAVE
+&kp LSHFT  &kp TILDE  &kp NON_US_BACKSLASH  &kp AT            &kp HASH   &kp PRCNT     &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp SQT        &kp TILDE
+                                            &kp LGUI          &trans     &kp SPACE     &kp RET    &trans                &kp RALT
             >;
         };
 
