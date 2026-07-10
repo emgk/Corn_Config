@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        js_arrow: js_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "JS_ARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -38,7 +47,7 @@
             display-name = "Raise";
             bindings = <
 &kp TAB    &kp EXCL   &kp QUESTION   &kp AMPS          &kp PIPE   &kp DOLLAR    &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK       &kp PLUS       &kp BSPC
-&kp LCTRL  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp MINUS     &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON  &kp GRAVE
+&kp LCTRL  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp MINUS     &js_arrow  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON  &kp GRAVE
 &kp LSHFT  &kp TILDE  &kp SLASH      &kp AT            &kp HASH   &kp PRCNT     &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp SQT        &kp TILDE
                                      &kp LGUI          &trans     &kp SPACE     &kp RET    &trans                &kp RALT
             >;
@@ -53,10 +62,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB     &none         &none         &none      &none           &none        &kp SLASH  &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
+&bt BT_CLR  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none        &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &trans
+&kp LSHFT   &trans        &trans        &trans     &trans          &trans       &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
+                                        &kp LGUI   &trans          &kp SPACE    &kp RET    &trans        &kp N0
             >;
         };
 
